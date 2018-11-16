@@ -2,3 +2,4 @@
 !pages/
 !components/
 node_modules
+.next
