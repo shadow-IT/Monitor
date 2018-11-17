@@ -21,10 +21,10 @@ HealthTileContainer.displayName = 'HealthTileContainer';
 
 //TODO: Does this work as intended?
 HealthTileContainer.propTypes = {
-    statuses: PropTypes.arrayOf({
+    statuses: PropTypes.arrayOf(PropTypes.shape({
         name: PropTypes.string.isRequired,
         status: PropTypes.number.isRequired
-    }).isRequired
+    })).isRequired
 };
 
 export default HealthTileContainer;
