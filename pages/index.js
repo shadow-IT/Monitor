@@ -1,12 +1,13 @@
 import fetch from 'isomorphic-unfetch';
 
+import PageBase from '../components/layout/base/PageBase';
 import HealthContainer from '../components/health/HealthTileContainer';
 
 const Index = (props) => (
-	<div>
+	<PageBase>
 		<h1>Refresh test</h1>
 		<HealthContainer statuses={props.results}/>
-	</div>
+	</PageBase>
 );
 
 Index.displayName = 'IndexPage';
